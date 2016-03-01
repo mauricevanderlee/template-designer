@@ -40,6 +40,10 @@ module.exports = {
 				loaders: ['react-hot', 'babel'],
 				include: path.join(__dirname, 'src'),
 			},
+			{
+				test: /\.html$/,
+				loader: "html"
+			},
 			{ test: /\.css$/, loader: ExtractTextPlugin.extract('style', 'css!postcss') },
 			{ test: /\.scss$/, loader: ExtractTextPlugin.extract('style', 'css!postcss!sass') },
 			{ test: /\.(woff2?|ttf|eot|svg)$/, loader: 'url?limit=10000' },
