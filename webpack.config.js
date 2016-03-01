@@ -32,7 +32,9 @@ module.exports = {
 			"window.Tether": "tether"
 		})
 	],
-
+	sassLoader: {
+		includePaths: [path.resolve(__dirname, "./node_modules")]
+	},
 	module: {
 		loaders: [
 			{
