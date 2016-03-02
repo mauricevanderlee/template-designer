@@ -11,9 +11,8 @@ useFlexbox: true
 # Webpack loaders, order matters
 styleLoaders:
   - style
-  - css?sourceMap
-  - resolve-url?sourceMap
-  - sass?sourceMap
+  - css
+  - sass
 
 # Extract styles to stand-alone css file
 # Different settings for different environments can be used,
@@ -32,74 +31,74 @@ styleLoaders:
 # Thus, derived Bootstrap variables can depend on values from here.
 # See the Bootstrap _variables.scss file for examples of derived Bootstrap variables.
 #
-# preBootstrapCustomizations: ./node_modules/bootstrap-material-design/sass/bootstrap-material-design.scss
+preBootstrapCustomizations: ./src/precustom.scss
 
 
 # This gets loaded after bootstrap/variables is loaded
 # Thus, you may customize Bootstrap variables
 # based on the values established in the Bootstrap _variables.scss file
 #
-# bootstrapCustomizations: ./node_modules/bootstrap-material-design/sass/bootstrap-material-design.scss
+bootstrapCustomizations: ./node_modules/bootstrap-material-design/scss/core
 
 
 # Import your custom styles here
 # Usually this endpoint-file contains list of @imports of your application styles
 #
-appStyles: ./sass/template.scss
+appStyles: ./src/custom.scss
 
 
 ### Bootstrap styles
 styles:
 
   # Mixins
-  mixins: true
+  mixins: false
 
   # Reset and dependencies
-  normalize: true
-  print: true
+  normalize: false
+  print: false
 
   # Core CSS
-  reboot: true
-  type: true
-  images: true
-  code: true
-  grid: true
-  tables: true
-  forms: true
-  buttons: true
+  reboot: false
+  type: false
+  images: false
+  code: false
+  grid: false
+  tables: false
+  forms: false
+  buttons: false
 
   # Components
-  animation: true
-  dropdown: true
-  button-group: true
-  input-group: true
-  custom-forms: true
-  nav: true
-  navbar: true
-  card: true
-  breadcrumb: true
-  pagination: true
-  pager: true
-  labels: true
-  jumbotron: true
-  alert: true
-  progress: true
-  media: true
-  list-group: true
-  responsive-embed: true
-  close: true
+  animation: false
+  dropdown: false
+  button-group: false
+  input-group: false
+  custom-forms: false
+  nav: false
+  navbar: false
+  card: false
+  breadcrumb: false
+  pagination: false
+  pager: false
+  labels: false
+  jumbotron: false
+  alert: false
+  progress: false
+  media: false
+  list-group: false
+  responsive-embed: false
+  close: false
 
   # Components w/ JavaScript
-  modal: true
-  tooltip: true
-  popover: true
-  carousel: true
+  modal: false
+  tooltip: false
+  popover: false
+  carousel: false
 
   # Utility classes
-  utilities: true
-  utilities-background: true
-  utilities-spacing: true
-  utilities-responsive: true
+  utilities: false
+  utilities-background: false
+  utilities-spacing: false
+  utilities-responsive: false
 
 ### Bootstrap scripts
 scripts:

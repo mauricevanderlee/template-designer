@@ -33,7 +33,9 @@ module.exports = {
 		})
 	],
 	sassLoader: {
-		includePaths: [path.resolve(__dirname, "./node_modules")]
+		includePaths: [
+			path.resolve(__dirname, "./node_modules/bootstrap-material-design/node_modules")
+		]
 	},
 	module: {
 		loaders: [
