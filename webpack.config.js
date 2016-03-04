@@ -10,7 +10,7 @@ module.exports = {
 	entry: [
 		'webpack-dev-server/client?http://localhost:3000',
 		'webpack/hot/only-dev-server',
-		'bootstrap-loader/extractStyles',
+		'bootstrap-loader',
 		'./src/app',
 	],
 
@@ -27,22 +27,21 @@ module.exports = {
 		new webpack.ProvidePlugin({
 			$: "jquery",
 			jQuery: "jquery",
-			jquery: 'jquery',
 			"Tether": 'tether',
 			"window.Tether": "tether"
 		})
 	],
-	sassLoader: {
-		includePaths: [
-			path.resolve(__dirname, "./node_modules/bootstrap-material-design/node_modules")
-		]
-	},
+//	sassLoader: {
+//		includePaths: [
+//			path.resolve(__dirname, "./node_modules/bootstrap-material-design/node_modules")
+//		]
+//	},
 	module: {
 		loaders: [
 			{
 				test: /\.js$/,
 				loaders: ['react-hot', 'babel'],
-				include: path.join(__dirname, 'src'),
+				include: path.join(__dirname, 'src')
 			},
 			{
 				test: /\.html$/,
@@ -51,7 +50,6 @@ module.exports = {
 			{ test: /\.css$/, loader: ExtractTextPlugin.extract('style', 'css!postcss') },
 			{ test: /\.scss$/, loader: ExtractTextPlugin.extract('style', 'css!postcss!sass') },
 			{ test: /\.(woff2?|ttf|eot|svg)$/, loader: 'url?limit=10000' },
-			// Bootstrap 4
 			{ test: /bootstrap\/dist\/js\/umd\//, loader: 'imports?jQuery=jquery' }
 		],
 	},

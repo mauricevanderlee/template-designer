@@ -1,195 +1,128 @@
-<nav class="navbar navbar-light bg-faded">
+<nav class="navbar navbar-full navbar-light bg-faded">
 	<div class="container">
 		<a class="navbar-brand" href="/" title="Ga naar de Hoofdpagina">
-			<div>
-				<h1>BC HANEVOET <small class="text-muted hidden-xs">Website</small></h1>
-				<h2 class="text-muted hidden-xs">Recreatieve Badminton Club in EINDHOVEN</h2>
-			</div>
+				<h1>BC HANEVOET <small class="text-muted hidden-xs-down">Website</small></h1>
+				<h2 class="text-muted hidden-xs-down">Recreatieve Badminton Club in EINDHOVEN</h2>
 		</a>
-		<ul class="nav navbar-nav pull-xs-right">
+		<form class="form-inline pull-xs-right">
 			<div class="btn-group">
-				<a href="" data-target="#" class="dropdown-toggle" data-toggle="dropdown">
-					<i class="material-icons">account_circle</i>&nbsp;Gast<b class="caret"></b>
-				</a>
-				<div class="dropdown-menu">
+				<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<i class="material-icons">account_circle</i>&nbsp;Gast
+				</button>
+				<div class="dropdown-menu dropdown-menu-right">
 					<a class="dropdown-item" href="/login">
-						<i class="fa fa-sign-in fa-fw"></i>Inloggen
+						<i class="fa fa-sign-in fa-fw"></i>&nbsp;Inloggen
 					</a>
 					<a class="dropdown-item" href="/recover-password">
-						<i class="fa fa-question-circle fa-fw"></i>Wachtwoord herstellen
+						<i class="fa fa-question-circle fa-fw"></i>&nbsp;Wachtwoord herstellen
 					</a>
-					<div class="dropdown-divider"></li>
+					<div class="dropdown-divider"></div>
 					<a class="dropdown-item" href="/register">
-						<i class="fa fa-pencil fa-fw"></i>Registreren
+						<i class="fa fa-pencil fa-fw"></i>&nbsp;Registreren
 					</a>
 				</div>
 			</div>
-		</ul>
+		</form>
 	</div>
 </nav>
-<!--
-<div id="carousel-header" class="carousel slide page-scroll" data-ride="carousel">
-	<ol class="carousel-indicators">
+<div id="carousel-header" class="carousel slide" data-ride="carousel">
+	<ol class="carousel-indicators text-xs-right">
 		<li data-target="#carousel-header" data-slide-to="0" class="active"></li>
 		<li data-target="#carousel-header" data-slide-to="1"></li>
 		<li data-target="#carousel-header" data-slide-to="2"></li>
 		<li data-target="#carousel-header" data-slide-to="3"></li>
 	</ol>
 	<div class="carousel-inner" role="listbox">
-		<div class="item active">
-			<img src="/img/bg-jumbotron.png" alt="" height="500px">
-			<div class="carousel-caption">
-				<h2>COMPETITIEF &bull; RECREATIEF &bull; SPORTIEF</h2>
-				<h3>Sporthal "de Genderbeemd"</h3>
-				<p>&rsaquo;&rsaquo;&nbsp;Voor <a href="#Junioren">Jong</a> en <a href="#Senioren">Oud</a>!</p>
+		<div class="carousel-item active">
+			<img src="/img/bg-jumbotron.png" alt="">
+			<div class="carousel-caption text-xs-right">
+				<h3>COMPETITIEF &bull; RECREATIEF &bull; SPORTIEF</h3>
+				<p class="lead">Sporthal "de Genderbeemd"</p>
+				<p class="hidden-xs-down">&rsaquo;&rsaquo;&nbsp;Voor <a href="#Junioren">Jong</a> en <a href="#Senioren">Oud</a>!</p>
 			</div>
 		</div>
-		<div class="item">
-			<img src="/img/bg-jumbotron.png" alt="" height="500px">
-			<div class="carousel-caption">
-				<h2>Senioren Toernooi</h2>
-				<h3>Zondag 8 november 2015</h3>
+		<div class="carousel-item">
+			<img src="/img/bg-jumbotron.png" alt="">
+			<div class="carousel-caption text-xs-right">
+				<h3>Senioren Toernooi</h3>
+				<p class="lead">Zondag 8 november 2015</p>
 				<p>Senioren</p>
 			</div>
 		</div>
-		<div class="item">
-			<img src="/img/bg-jumbotron.png" alt="" height="500px">
-			<div class="carousel-caption">
-				<h2>Familietoernooi</h2>
-				<h3>Zondag 31 januari 2016</h3>
+		<div class="carousel-item">
+			<img src="/img/bg-jumbotron.png" alt="">
+			<div class="carousel-caption text-xs-right">
+				<h3>Familietoernooi</h3>
+				<p class="lead">Zondag 31 januari 2016</p>
 				<p>Junioren en Senioren</p>
 			</div>
 		</div>
-		<div class="item">
-			<img src="/img/bg-jumbotron.png" alt="" height="500px">
-			<div class="carousel-caption">
-				<h2>Sponsoren Gezocht</h3>
+		<div class="carousel-item">
+			<img src="/img/bg-jumbotron.png" alt="">
+			<div class="carousel-caption text-xs-right">
+				<h3>Sponsoren Gezocht</h3>
 				<p>We zoeken een nieuwe sponsor voor de competitie teams van de junioren.</p>
 			</div>
 		</div>
 	</div>
 	<a class="left carousel-control" href="#carousel-header" role="button" data-slide="prev">
-		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		<span class="icon-prev" aria-hidden="true"></span>
 		<span class="sr-only">Vorige</span>
 	</a>
 	<a class="right carousel-control" href="#carousel-header" role="button" data-slide="next">
-		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		<span class="icon-next" aria-hidden="true"></span>
 		<span class="sr-only">Volgende</span>
 	</a>
 </div>
--->
-<nav id="page_nav" class="navbar navbar-light bg-faded page-scroll hidden-print">
+<nav id="page_nav" class="navbar navbar-full navbar-light bg-faded page-scroll hidden-print">
 	<div class="container">
-		<ul class="nav navbar-nav">
-			<li class="nav-item active">
-				<a class="nav-link" href="#page-top">Hoofdpagina</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#Club">De Club</a>
-			</li>
-			<li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Vanaf 7 t/m 16 jaar">
-				<a class="nav-link" href="#Junioren">Junioren</a>
-			</li>
-			<li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Vanaf 16 jaar">
-				<a class="nav-link" href="#Senioren">Senioren</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#Contact">Contact</a>
-			</li>
-		</ul>
+		<div class="nav navbar-nav">
+			<a class="nav-item nav-link active" href="#page-top">Hoofdpagina</a>
+			<a class="nav-item nav-link" href="#Club">De Club</a>
+			<a class="nav-item nav-link" href="#Junioren">Junioren</a>
+			<a class="nav-item nav-link" href="#Senioren">Senioren</a>
+			<a class="nav-item nav-link" href="#Contact">Contact</a>
+		</div>
 	</div>
 </nav>
 <div class="container">
 	<div class="row">
 		<div class="col-md-4 col-md-push-8">
-			<section id="Nieuws" class="pagetop">
-				<div class="row">
-					<div class="col-sm-12">
-						<h1>Nieuws</h1>
-						<div class="panel">
-							<div class="panel-heading">
-								<h3 class="panel-title">Algemeen Nieuws <span class="badge">1 item</span></h3>
-							</div>
-							<ul class="list-group">
-								<li class="list-group-item">
-									<h3 class="text-uppercase">
-										<a data-toggle="collapse" href="#NieuwsItem272" aria-expanded="false" aria-controls="NieuwsItem272">Zomervakantie 2016</a>
-									</h3>
-									<div id="NieuwsItem272" class="collapse">
-										<blockquote>
-											<p>27 juli tot en met 31 augustus is de sporthal wegens de zomervakantie gesloten!</p>
-											<footer>Geplaatst door Maurice van der Lee tot woensdag 31 augustus 2016</footer>
-										</blockquote>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div class="panel">
-							<div class="panel-heading">
-								<h3 class="panel-title">Nieuws voor Junioren <span class="badge">2 items</span></h3>
-							</div>
-							<ul class="list-group">
-								<li class="list-group-item">
-									<h3 class="text-uppercase">
-										<a data-toggle="collapse" href="#NieuwsItem269" aria-expanded="false" aria-controls="NieuwsItem269">27 April & 4 Mei: Geen badminton</a>
-									</h3>
-									<div id="NieuwsItem269" class="collapse">
-										<blockquote>
-											<p>Wegens Voorjaarsvakantie geen badminton voor de junioren.</p>
-											<footer>Geplaatst door Maurice van der Lee tot woensdag 4 mei 2016</footer>
-										</blockquote>
-									</div>
-								</li>									<li class="list-group-item">
-									<h3 class="text-uppercase">
-										<a data-toggle="collapse" href="#NieuwsItem270" aria-expanded="false" aria-controls="NieuwsItem270">20 Juli: Laatste training</a>
-									</h3>
-									<div id="NieuwsItem270" class="collapse">
-										<blockquote>
-											<p>Op 20 juli is het al weer de laatste training voor de junioren.</p>
-											<footer>Geplaatst door Maurice van der Lee tot woensdag 20 juli 2016</footer>
-										</blockquote>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div class="panel">
-							<div class="panel-heading">
-								<h3 class="panel-title">Nieuws voor Senioren <span class="badge">1 item</span></h3>
-							</div>
-							<ul class="list-group">
-								<li class="list-group-item">
-									<h3 class="text-uppercase">
-										<a data-toggle="collapse" href="#NieuwsItem271" aria-expanded="false" aria-controls="NieuwsItem271">20 Juli: Laatste speelavond</a>
-									</h3>
-									<div id="NieuwsItem271" class="collapse">
-										<blockquote>
-											<p>20 juli is al weer de laatste speelavond van het seizoen. Zoals gebruikelijk sluiten we het seizoen af met een drankje in de kantine!</p>
-											<footer>Geplaatst door Maurice van der Lee tot woensdag 20 juli 2016</footer>
-										</blockquote>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div class="panel">
-							<div class="panel-heading">
-								<h3 class="panel-title">Facebook</h3>
-							</div>
-							<script>(function(d, s, id) {
-								var js, fjs = d.getElementsByTagName(s)[0];
-								if (d.getElementById(id)) return;
-								js = d.createElement(s); js.id = id;
-								js.src = "//connect.facebook.net/nl_NL/sdk.js#xfbml=1&version=v2.3&appId=725080847587063";
-								fjs.parentNode.insertBefore(js, fjs);
-								}(document, 'script', 'facebook-jssdk'));
-							</script>
-							<div class="fb-page" data-href="https://www.facebook.com/badmintonclubhanevoet" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" data-show-posts="true"></div>
-						</div>
-					</div>
+			<h1>Nieuws</h1>
+			<div class="card">
+				<div class="card-block card-warning card-inverse">
+					<h4 class="card-title">Algemeen <span class="label label-info">1 item</span></h4>
+					<h6 class="card-subtitle text-muted">Voor Junioren & Senioren</h6>
 				</div>
-			</section>
+				<div class="card-block">
+					<h4 class="card-title">Zomervakantie 2016</h4>
+					<p class="card-text">27 juli tot en met 31 augustus is de sporthal wegens de zomervakantie gesloten!</p>
+					<footer>Geplaatst door Maurice van der Lee tot woensdag 31 augustus 2016</footer>
+				</div>
+				<div class="card-block card-warning card-inverse">
+					<h4 class="card-title">Junioren <span class="label label-info">2 items</span></h4>
+				</div>
+				<div class="card-block">
+					<h4 class="card-title">27 April & 4 Mei: Geen badminton</h4>
+					<p class="card-text">Wegens Voorjaarsvakantie geen badminton voor de junioren.</p>
+					<footer>Geplaatst door Maurice van der Lee tot woensdag 4 mei 2016</footer>
+				</div>
+				<div class="card-block">
+					<h4 class="card-title">20 Juli: Laatste training</h4>
+					<p class="card-text">Op 20 juli is het al weer de laatste training voor de junioren.</p>
+					<footer>Geplaatst door Maurice van der Lee tot woensdag 20 juli 2016</footer>
+				</div>
+				<div class="card-block card-warning card-inverse">
+					<h4 class="card-title">Senioren <span class="label label-info">1 item</span></h4>
+				</div>
+				<div class="card-block">
+					<h4 class="card-title">20 Juli: Laatste speelavond</h4>
+					<p class="card-text">20 juli is al weer de laatste speelavond van het seizoen. Zoals gebruikelijk sluiten we het seizoen af met een drankje in de kantine!</p>
+					<footer>Geplaatst door Maurice van der Lee tot woensdag 20 juli 2016</footer>
+				</div>
+			</div>
 		</div>
 		<div class="col-md-8 col-md-pull-4">
-			<section id="Welkom" class="pagetop">
 				<div class="row">
 					<div class="col-sm-12">
 						<h1>Welkom bij onze club!</h1>
@@ -217,11 +150,9 @@
 						<p>Heeft u nog geen inloggegevens? Neem dan contact op met Maurice.</p>
 					</div>
 				</div>
-			</section>
-			<section id="Club">
 				<div class="row">
 					<div class="col-sm-12">
-						<h1>De Club</h1>
+						<h1 id="Club" class="scroll-adjust">De Club</h1>
 						<p>De club werd opgericht in 1974. De club bestaat al meer dan 40 jaar!</p>
 					</div>
 				</div>
@@ -317,15 +248,14 @@
 						</div>					
 					</div>
 				</div>
-			</section>
 		</div>
 	</div>
 </div>
 <div class="container">
-	<section id="Junioren">
+	<section>
 		<div class="row">
 			<div class="col-sm-12">
-				<h1>Junioren</h1>
+				<h1 id="Junioren" class="scroll-adjust">Junioren</h1>
 				<p>Voor de jeugd is het mogelijk om bij BC Hanevoet te badmintonnen. Alle jeugd tussen de 8 en 16 jaar is van harte welkom op iedere woensdag van 17:00 tot 18:00 uur.</p>
 				<p>Het is trouwens helemaal niet nodig om als de beste te kunnen badmintonnen. Er zal op op de speelmiddag aandacht worden besteed aan de techniek van badminton. Daarnaast zullen er ook elke week partijtjes worden gespeeld.</p>
 			</div>
@@ -376,7 +306,7 @@
 			</div>
 		</div>
 	</section>
-	<section id="Senioren">
+	<section id="Senioren" class="scroll-adjust">
 		<div class="row">
 			<div class="col-sm-12">
 				<h1>Senioren</h1>
@@ -438,7 +368,7 @@
 			</div>
 		</div>
 	</section>
-	<section id="Contact">
+	<section id="Contact" class="scroll-adjust">
 		<div class="row">
 			<div class="col-sm-6">
 				<h1>Contact opnemen</h1>
@@ -464,42 +394,34 @@
 		<i class="fa fa-chevron-up"></i>
 	</a>
 </div>
-<footer class="text-center">
-	<div class="footer-above">
-		<div class="container">
-			<div class="row">
-				<div class="footer-col col-md-4">
-					<h3>Locatie</h3>
-					<p>Sporthal "De Genderbeemd"<br>Sterkenburg 616<br>5653 NP  Eindhoven</p>
-				</div>
-				<div class="footer-col col-md-4">
-					<h3>Sponsoren</h3>
-					<p><a href="http://www.garagegrassere.nl/">
-						<img width="150px" style="border:0px" src="http://www.bchanevoet.nl/img/sponsor1.gif">
-					</a></p>
-					<p><a href="http://www.goldengardeneindhoven.nl/">
-						<img width="150px" style="border:0px" src="http://www.bchanevoet.nl/img/sponsor2.png">
-					</a></p>
-				</div>
-				<div class="footer-col col-md-4">
-					<h3>Volg ons op Social Media</h3>
-					<p class="addthis_horizontal_follow_toolbox"></p>
-				</div>
+<footer class="footer-above text-xs-center">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col col-md-4">
+				<h3>Locatie</h3>
+				<p>Sporthal "De Genderbeemd"<br>Sterkenburg 616<br>5653 NP  Eindhoven</p>
+			</div>
+			<div class="footer-col col-md-4">
+				<h3>Sponsoren</h3>
+				<p><a href="http://www.garagegrassere.nl/">
+					<img width="150px" style="border:0px" src="/img/sponsor1.gif">
+				</a></p>
+				<p><a href="http://www.goldengardeneindhoven.nl/">
+					<img width="150px" style="border:0px" src="/img/sponsor2.png">
+				</a></p>
+			</div>
+			<div class="footer-col col-md-4">
+				<h3>Volg ons op Social Media</h3>
+				<p class="addthis_horizontal_follow_toolbox"></p>
 			</div>
 		</div>
 	</div>
 </footer>
-<footer class="hidden-print text-center">
-	<div class="footer-below">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 hidden-xs">
-					Copyright &copy; 2003-2015 BC Hanevoet - Maurice van der Lee
-				</div>
-				<div class="col-lg-12 visible-xs-block">
-					&copy; 2003-2015 - M. v.d. Lee
-				</div>
-			</div>
-		</div>
+<footer class="footer-below hidden-print text-xs-center">
+	<div class="col-lg-12 hidden-xs-down text-muted">
+		Copyright &copy; 2003-2015 &bull; BC Hanevoet &bull; Maurice van der Lee
+	</div>
+	<div class="col-lg-12 hidden-sm-up text-muted">
+		&copy; 2003-2015 &bull; M. v.d. Lee
 	</div>
 </footer>

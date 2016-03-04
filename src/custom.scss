@@ -1,67 +1,73 @@
+// Scrollspy
+body {
+  position: relative;
+}
+.scroll-adjust{
+	padding-top:60px;
+	margin-top:-60px;
+}
+
+// Navigation and footer
 .navbar, .footer-below {
     background-image: linear-gradient($grey-100, $grey-200 60%, $grey-300);
-    background-repeat: no-repeat;
-	display: block;
 }
 
 .navbar:first-of-type {
-	margin-bottom: 0px !important;
-	height:80px;
+	margin-bottom: 0px;
 }
 
 .navbar-brand {
-	background: rgba(0, 0, 0, 0) url("http://bchanevoet.nl/img/shuttle.gif") no-repeat scroll 0 0;
-//	margin-right: 10px;
-//	float: left;
-//	height: 60px;
-//	width: 50px;
+	background: rgba(0, 0, 0, 0) url("/img/shuttle.gif") no-repeat scroll 0 0;
+	min-height: 60px;
+	white-space: nowrap;
+	padding-left: 60px;
+	margin-top: 5px;
+	
+	> h1 {
+		font-size: 24px;
+		line-height: 24px;
 
-	> div {
-	//	font-family: 'trebuchet ms', 'Arial';
-		white-space: nowrap !important;
-		margin-left: 60px !important;
-		margin-top: 5px;
-		
-		> h1 {
-			font-size: 24px !important;
-			line-height: 24px !important;
-			text-decoration: none !important;
-			cursor: pointer !important;
-
-			&:hover,
-			&:focus {
-			  color: $link-color !important;
-			  background-color: transparent !important;
-			}
-
-//			> small {
-//				font-size: 12px !important;
-//			}
+		&:hover,
+		&:focus {
+		  color: $link-color;
 		}
-		> h2 {
-			font-size: 12px !important;
-			line-height: 8px !important;
-		}
+	}
+
+	> h2 {
+		font-size: 12px;
+		line-height: 8px;
 	}
 }
 
-footer {
-//	background-color: $grey-300;
-	min-height: 30px;
-	width: 100%;
-	h3, p, p div {
-		text-align: center;
-	}
+.footer-above {
+	background-color: $grey-300;
 }
 
 .footer-below {
-/*	position: absolute;
-	bottom: 0px;
-*/	p {
+	div {
 		line-height: 30px;
-		margin-bottom: 0px !important;
-		margin-top: 0px !important;
-		width: 100%;
-		text-align: center;
 	}
+}
+
+// Carousel
+.carousel-item {
+	height: 200px;
+	img {
+		min-width: 100%;
+		min-height: 200px;
+	}
+}
+.carousel-control.left {
+	background-image: url("/img/left-jumbotron.png");
+	background-size: 220px 200px;
+	opacity: 1;
+	width: 220px;
+}
+
+img {
+	max-height: 200px;
+}
+
+.card footer {
+	font-size: 75%;
 }
