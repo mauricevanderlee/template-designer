@@ -4,13 +4,21 @@ $font-family-base: 'Roboto', 'Arial';
 $headings-font-family: 'Trebuchet MS', 'Arial';
 $headings-font-weight: normal;
 
-$body-bg: $white;
-$brand-primary: $indigo-500;
+$body-bg: 					$white;
+$gray-dark:                 #373a3c;
+$gray:                      #55595c;
+$gray-light:                #818a91;
+$gray-lighter:              #eceeef;
+$gray-lightest:             #f7f7f9;
 
-/*
-$navbar-default-bg: $grey-300;
-$navbar-default-link-hover-bg: $grey-400;
+$brand-primary:             $indigo-500;
+$brand-success:             $green-500;
+$brand-info:                $blue-500;
+$brand-warning:             $orange-500;
+$brand-danger:              $red-500;
 
-$border-radius-base: 2px;
-$border-radius-small: 1px;
-*/
+$text-muted:				rgba(0,0,0,0.3);
+
+$border-radius:          0px;
+$border-radius-lg:       0px;
+$border-radius-sm:       0px;

@@ -65,9 +65,258 @@ body {
 }
 
 img {
-	max-height: 200px;
+//	max-height: 200px;
 }
 
-.card footer {
-	font-size: 75%;
+// Cards
+.card-primary {
+	.card-header {
+		background-color: $indigo-500 !important;
+		&:first-of-type {
+			background-color: $indigo-700 !important;
+		}
+	}
+	.card-block {
+		background-color: $indigo-300 !important;
+	}
+	.card-footer {
+		background-color: $indigo-100 !important;
+	}
+}
+.card-secondary {
+	.card-header {
+		background-color: $yellow-500 !important;
+		&:first-of-type {
+			background-color: $yellow-700 !important;
+		}
+	}
+	.card-block {
+		background-color: $yellow-300 !important;
+	}
+	.card-footer {
+		background-color: $yellow-100 !important;
+	}
+}
+.card-info {
+	.card-header {
+		background-color: $blue-500 !important;
+		&:first-of-type {
+			background-color: $blue-700 !important;
+		}
+	}
+	.card-block {
+		background-color: $blue-300 !important;
+	}
+	.card-footer {
+		background-color: $blue-100 !important;
+	}
+}
+.card-success {
+	.card-header {
+		background-color: $green-500 !important;
+		&:first-of-type {
+			background-color: $green-700 !important;
+		}
+	}
+	.card-block {
+		background-color: $green-300 !important;
+	}
+	.card-footer {
+		background-color: $green-100 !important;
+	}
+}
+.card-warning {
+	.card-header {
+		background-color: $orange-500 !important;
+		&:first-of-type {
+			background-color: $orange-700 !important;
+		}
+	}
+	.card-block {
+		background-color: $orange-300 !important;
+	}
+	.card-footer {
+		background-color: $orange-100 !important;
+	}
+}
+.card-danger {
+	.card-header {
+		background-color: $red-500 !important;
+		&:first-of-type {
+			background-color: $red-700 !important;
+		}
+	}
+	.card-block {
+		background-color: $red-300 !important;
+	}
+	.card-footer {
+		background-color: $red-100 !important;
+	}
+}
+.card-block {
+	box-shadow: 0 1em 1em -1em rgba(0, 0, 0, 0.5) inset;
+}
+.card {
+	footer {
+		font-size: 75%;
+		color: $text-muted;
+	}
+}
+.card img {
+//	display: block;
+	width: 100%;
+}
+.card-profile-bg {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 1.25rem;
+	&:first-of-type {
+		height: 100px;
+		border-bottom: 3px solid $white;
+	}
+}
+.card-profile-img {
+	border: 3px solid #fff;
+	border-radius: 100%;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+	margin-bottom: 5px;
+	margin-top: -70px;
+	max-width: 100px;
+}
+.card-inverse .card-subtitle {
+	color: rgba(255,255,255,0.7);
+}
+
+// Close
+.close {
+	opacity: 0.8;
+}
+.close-inverse {
+	color: $white;
+	text-shadow: 0 1px 0 $black;
+}
+
+// MODALS
+.modal-inverse {
+	color: $white !important; //rgba(255,255,255,0.7);
+}
+.modal-header {
+	&:first-of-type {
+		height: 25px;
+		line-height: 25px;
+		padding: 0px 15px;
+	}
+}
+
+.modal-primary {
+  @include card-variant($brand-primary, $brand-primary);
+}
+.modal-success {
+  @include card-variant($brand-success, $brand-success);
+}
+.modal-info {
+  @include card-variant($brand-info, $brand-info);
+}
+.modal-warning {
+  @include card-variant($brand-warning, $brand-warning);
+}
+.modal-danger {
+  @include card-variant($brand-danger, $brand-danger);
+}
+.modal-primary-outline {
+  @include card-outline-variant($btn-primary-bg);
+}
+.modal-secondary-outline {
+  @include card-outline-variant($btn-secondary-border);
+}
+.modal-info-outline {
+  @include card-outline-variant($btn-info-bg);
+}
+.modal-success-outline {
+  @include card-outline-variant($btn-success-bg);
+}
+.modal-warning-outline {
+  @include card-outline-variant($btn-warning-bg);
+}
+.modal-danger-outline {
+  @include card-outline-variant($btn-danger-bg);
+}
+.modal-inverse {
+  @include card-inverse;
+}
+.modal-primary {
+	.modal-header {
+		background-color: $indigo-500 !important;
+		&:first-of-type {
+			background-color: $indigo-700 !important;
+		}
+	}
+	.modal-footer {
+		background-color: $indigo-100 !important;
+	}
+}
+.modal-secondary {
+	.modal-header {
+		background-color: $yellow-500 !important;
+		&:first-of-type {
+			background-color: $yellow-700 !important;
+		}
+	}
+	.modal-footer {
+		background-color: $yellow-100 !important;
+	}
+}
+.modal-info {
+	.modal-header {
+		background-color: $blue-500 !important;
+		&:first-of-type {
+			background-color: $blue-700 !important;
+		}
+	}
+	.modal-footer {
+		background-color: $blue-100 !important;
+	}
+}
+.modal-success {
+	.modal-header {
+		background-color: $green-500 !important;
+		&:first-of-type {
+			background-color: $green-700 !important;
+		}
+	}
+	.modal-footer {
+		background-color: $green-100 !important;
+	}
+}
+.modal-warning {
+	.modal-header {
+		background-color: $orange-500 !important;
+		&:first-of-type {
+			background-color: $orange-700 !important;
+		}
+	}
+	.modal-footer {
+		background-color: $orange-100 !important;
+	}
+}
+.modal-danger {
+	.modal-header {
+		background-color: $red-500 !important;
+		&:first-of-type {
+			background-color: $red-700 !important;
+		}
+	}
+	.modal-footer {
+		background-color: $red-100 !important;
+	}
+}
+.modal-block {
+	box-shadow: 0 1em 1em -1em rgba(0, 0, 0, 0.5) inset;
+}
+.modal {
+	footer {
+		font-size: 75%;
+		color: $text-muted;
+	}
 }
