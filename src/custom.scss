@@ -7,6 +7,10 @@ body {
 	margin-top:-60px;
 }
 
+// Heading
+.row h1 {
+	border-bottom: 7px solid rgb(225, 225, 225);
+}
 // Navigation and footer
 .navbar, .footer-below {
     background-image: linear-gradient($grey-100, $grey-200 60%, $grey-300);
